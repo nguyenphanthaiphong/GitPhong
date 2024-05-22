@@ -14,8 +14,10 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from xml.etree.ElementInclude import include
+
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,re_path,include
 from django.contrib.auth import views as auth_views
 from django.contrib.auth import views
 from django.conf.urls.static import static
@@ -23,7 +25,8 @@ from django.conf import settings
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls)
+    path('admin/', admin.site.urls),
+    path('', include('UngDungTimTro.urls')),
 ]
 
 if settings.DEBUG:

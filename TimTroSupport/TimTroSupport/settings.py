@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'TimTroSupport.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "findingdb",
+        "NAME": "timtro",
         "USER": "root",
-        "PASSWORD": "0868967902Tp@",
+        "PASSWORD": "Haru1234",
         "HOST": "" #mặc định local host
     }
 }
